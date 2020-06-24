@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --main-color: #ffffff00;
+    }
+    *{
+      font-family: Verdana, Geneva, sans-serif;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    #file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .button {
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      background-color: var(--main-color);
+      color: white; 
+      border: 2px solid white;
+      border-radius: 0.2rem;
+    }
+    .button:hover {
+      background-color: #ffffff55;
+      color: white; 
+    }
+    input[type=text] {
+      border-radius: 0.2rem;
+      background: var(--main-color);
+      border: white 2px solid;
+      color: white; 
+      padding: 12px 20px;
+      margin: 8px 0;
+    }
+    input[type=text]:hover {
+      background-color: #ffffff55;
+      color: white; 
+    }
+    input[type=text]:focus {
+      background-color: #ffffff55;
+      color: white; 
+    }
+    label{
+      padding: 8px 16px !important;
+    }
+    body{
+      display: flex;
+      height: 100vh;
+      flex-direction: row;
+      justify-content: center;
+      background: url('./bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      align-items: center;
+    }
+    #container{
+      color: white; 
+      font-size: 20px;
+    }
+  </style>
+  <title></title>
+</head>
+<body>
+  <div id='container'>
+    The folder that the server should watch: <input type="file" name="file" id="file" webkitdirectory multiple><label class="button" for="file">Choose a folder</label><br>
+    port to create the webserver (1025 ~ 49151): <input type="text" id="port" value="8080"><br>
+    <input class="button" type="button" onclick="create()" value='start server'>
+  </div>
+  <script src="./front.js"></script>
+</body>
+</html>

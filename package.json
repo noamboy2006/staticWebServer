@@ -1,0 +1,25 @@
+{
+  "name": "staticwebserver",
+  "version": "1.0.0",
+  "description": "An gui program that opens a staticWebServer based on electron and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noamboy2006/staticWebServer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noamboy2006/staticWebServer/issues"
+  },
+  "homepage": "https://github.com/noamboy2006/staticWebServer#readme",
+  "devDependencies": {
+    "electron": "^9.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
