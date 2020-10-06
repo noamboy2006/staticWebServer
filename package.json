@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/noamboy2006/staticWebServer#readme",
   "devDependencies": {
-    "electron": "^9.0.4"
+    "electron": "^9.3.1"
   },
   "dependencies": {
     "express": "^4.17.1"
